@@ -3,10 +3,12 @@ import { Text, StyleSheet, View } from 'react-native';
 
 // Components
 const ComponentsScreen = () => {
+    const greet = <Text style={Object.assign({}, defaultStyle.textStyle, defaultStyle.paddingTop)}> Welcome to react-native world </Text>
+    
     return (
         <View style={defaultStyle.paddingTop}>
             <Text style={defaultStyle.textStyle}>This is a components screen</Text>
-            <Text style={Object.assign({}, defaultStyle.textStyle, defaultStyle.paddingTop)}>Hi there!</Text>
+            {greet}
         </View>
     );
 };
